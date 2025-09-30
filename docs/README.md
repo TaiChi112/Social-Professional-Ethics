@@ -17,6 +17,7 @@ graph TD
     G --> H[👥 Peer Code Review]
     H --> I[💬 Provide Feedback]
     I --> J[🔍 Report Issues if Found]
+    J --> K[🔀 Merge Pull Requests]
     K --> L[📝 Write Reflection Summary]
     L --> M[✅ Activity Complete]
 ```
@@ -77,22 +78,22 @@ mindmap
 
 ## 🎯 Learning Outcomes
 
-| Soft Skills | Activities | Assessment Criteria |
-|-------------|------------|-------------------|
-| **Critical Thinking** | Problem analysis, Solution validation | การวิเคราะห์ปัญหาได้ถูกต้อง, ตรวจสอบ solution ได้ |
-| **Problem Solving** | Debugging, Algorithm implementation | แก้ไขปัญหาได้สำเร็จ, จัดการเวลาได้ดี |
-| **Collaboration & Communication** | Code review, Constructive feedback | ให้ feedback ที่สร้างสรรค์, ทำงานร่วมกันได้ดี |
-| **Lifelong Learning** | Self-reflection, Peer learning | เขียนสะท้อนการเรียนรู้ได้ชัดเจน |
+| Soft Skills                       | Activities                            | Assessment Criteria                        |
+| --------------------------------- | ------------------------------------- | ------------------------------------------ |
+| **Critical Thinking**             | Problem analysis, Solution validation | การวิเคราะห์ปัญหาได้ถูกต้อง, ตรวจสอบ solution ได้ |
+| **Problem Solving**               | Debugging, Algorithm implementation   | แก้ไขปัญหาได้สำเร็จ, จัดการเวลาได้ดี               |
+| **Collaboration & Communication** | Code review, Constructive feedback    | ให้ feedback ที่สร้างสรรค์, ทำงานร่วมกันได้ดี        |
+| **Lifelong Learning**             | Self-reflection, Peer learning        | เขียนสะท้อนการเรียนรู้ได้ชัดเจน                   |
 
 ## ⏱️ Time Management
 
-| Phase | Duration | Activity |
-|-------|----------|----------|
-| 1 | 5-7 min | Problem Analysis |
-| 2 | 5 min/problem | Coding Implementation |
-| 3 | 3-5 min | Git Operations |
-| 4 | 10-15 min | Peer Review Process |
-| 5 | 10 min | Reflection & Summary |
+| Phase | Duration      | Activity              |
+| ----- | ------------- | --------------------- |
+| 1     | 5-7 min       | Problem Analysis      |
+| 2     | 5 min/problem | Coding Implementation |
+| 3     | 3-5 min       | Git Operations        |
+| 4     | 10-15 min     | Peer Review Process   |
+| 5     | 10 min        | Reflection & Summary  |
 
 ## 🔍 Evaluation Rubric
 
