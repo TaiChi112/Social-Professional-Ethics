@@ -1,0 +1,42 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled Files
+*.exe
+*.obj
+*.o
+*.pyc
+__pycache__/
+*.class
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Personal workspace backup files
+**/backup/
+**/*_backup.*
+**/*.bak
+
+# Don't ignore the structure but ignore common temp files in personal folders
+*/test_output.txt
+*/debug.log
+*/temp.*
+
+# Keep empty directories with placeholder
+!**/.gitkeep
