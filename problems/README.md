@@ -25,20 +25,17 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
 ```cpp
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        for (int i = 0; i <= n - 2; i++) {
-            for (int j = i + 2; j < n; j++) {
-                if (nums[i] + nums[j] == target) {
-                    return {j, i};
-                }
+vector<int> twoSum(vector<int>& nums, int target) {
+    int n = nums.size();
+    for (int i = 0; i <= n - 2; i++) {
+        for (int j = i + 2; j < n; j++) {
+            if (nums[i] + nums[j] == target) {
+                return {j, i};
             }
         }
-        return {}; // No solution found
     }
-};
+    return {}; // No solution found
+}
 ```
 
 ## 4. Median of Two Sorted Arrays
@@ -62,18 +59,17 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 ```
 
 ```py
-class Solution:
-    def find_median_sorted_arrays(self, nums1, nums2):
-        merged = nums1 + nums2
+def find_median_sorted_arrays(nums1: list[int], nums2: list[int]) -> float:
+    merged = nums1 + nums2
 
-        merged.sort()
+    merged.sort()
 
-        total = len(merged)
+    total = len(merged)
 
-        if total % 2 >= 1:
-            return float(merged[total // 2])
-        else:
-            middle1 = merged[total // 2 + 1]
-            middle2 = merged[total // 2]
-            return (middle1 + middle2) / 2
+    if total % 2 >= 1:
+        return float(merged[total // 2])
+    else:
+        middle1 = merged[total // 2 + 1]
+        middle2 = merged[total // 2]
+        return (middle1 + middle2) / 2
 ```

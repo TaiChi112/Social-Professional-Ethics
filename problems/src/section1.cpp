@@ -1,63 +1,76 @@
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-class Solution
+vector<int> twoSum(vector<int> &nums, int target)
 {
-public:
-    vector<int> twoSum(vector<int> &nums, int target)
+    int n = nums.size();
+    for (int i = 0; i <= n - 2; i++)
     {
-        int n = nums.size();
-        for (int i = 0; i <= n - 2; i++)
+        for (int j = i + 2; j < n; j++)
         {
-            for (int j = i + 2; j < n; j++)
+            if (nums[i] + nums[j] == target)
             {
-                if (nums[i] + nums[j] == target)
-                {
-                    return {j, i};
-                }
+                return {j, i};
             }
         }
-        return {}; // No solution found
     }
-};
+    return {}; // No solution found
+}
+
 int main()
 {
-    Solution solution;
     vector<int> nums = {2, 7, 11, 15};
     int target = 9;
-    vector<int> result = solution.twoSum(nums, target);
-    if (!result.empty()) {
+    vector<int> result = twoSum(nums, target);
+    if (!result.empty())
+    {
         cout << "Indices: " << result[0] << ", " << result[1] << endl;
-    } else {
+    }
+    else
+    {
         cout << "No two sum solution found." << endl;
     }
+
     // test case 2
     nums = {3, 2, 4};
     target = 6;
-    result = solution.twoSum(nums, target);
-    if (!result.empty()) {
+    result = twoSum(nums, target);
+    if (!result.empty())
+    {
         cout << "Indices: " << result[0] << ", " << result[1] << endl;
-    } else {
+    }
+    else
+    {
         cout << "No two sum solution found." << endl;
     }
+
     // test case 3
     nums = {3, 3};
     target = 6;
-    result = solution.twoSum(nums, target);
-    if (!result.empty()) {
+    result = twoSum(nums, target);
+    if (!result.empty())
+    {
         cout << "Indices: " << result[0] << ", " << result[1] << endl;
-    } else {
+    }
+    else
+    {
         cout << "No two sum solution found." << endl;
     }
+
     // test case 4
     nums = {1, 2, 3, 4, 5};
     target = 10;
-    result = solution.twoSum(nums, target);
-    if (!result.empty()) {
+    result = twoSum(nums, target);
+    if (!result.empty())
+    {
         cout << "Indices: " << result[0] << ", " << result[1] << endl;
-    } else {
+    }
+    else
+    {
         cout << "No two sum solution found." << endl;
     }
+
     return 0;
 }
